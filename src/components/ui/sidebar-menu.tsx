@@ -1,8 +1,6 @@
 import { useState, ReactNode } from "react"
 import { Drawer, DrawerContent } from "@/components/ui/drawer"
 import { X, Menu } from 'lucide-react'
-import { motion } from "framer-motion"
-import { Link } from "react-scroll"
 import { cn } from "@/lib/utils"
 import LogInButton from "./logIn-button"
 import { ThemeToggle } from "../theme-toogle"
