@@ -1,13 +1,17 @@
-import React from 'react'
 import { useTheme } from '@/contextAPI/ThemeProvider'
 import { ThemeToggle } from '@/components/theme-toogle'
-
 import { MyGraduationCap, MyScrollText, MyMessageCircleHeart } from "../icons/LucideIcons"
 import Udemy from "../icons/Udemy"
 import { NavBar } from "../ui/tubelight-navbar"
+import { useMobileView } from '@/hooks/useMobileView'
+
+import SideBarMenu from '../ui/sidebar-menu'
+import LogInButton from '../ui/logIn-button'
+import ChaicodeLogo from '../ui/chaicode-logo'
 
 function Header() {
-  const {theme, } = useTheme()
+  const {theme} = useTheme()
+  const isMobile = useMobileView()
 
   const navItems = [
     { name: 'Cohorts', url: '#', icon: <MyGraduationCap /> },
@@ -17,16 +21,25 @@ function Header() {
   ]
 
   return (
-    <div className='flex p-4 justify-between items-center sticky-top bg-[#dbdbdb] dark:bg-[#1F1F1F]'>
-      <h1>
-        <img src={`${theme === 'dark' ? './src/assets/chaicode-white.svg' : './src/assets/chaicode-black.svg'}`} width='130px' />
-      </h1>
+    <div className='fixed top-0 left-1/2 -translate-x-1/2 z-50 min-w-full bg-foreground'>
+      <div className='relative flex p-4 justify-between items-center'>
+        {
+          isMobile ? 
+          <div className='w-full flex justify-between items-center'>
+            <ChaicodeLogo theme={theme} />
+            <SideBarMenu items={navItems} />    
+          </div> 
+          : 
+          <div className='w-full flex justify-between items-center'>
+            <ChaicodeLogo theme={theme} />
+            <NavBar items={navItems} />
 
-      <NavBar items={navItems} />
-
-      <div className='flex gap-2 items-center'>
-        <ThemeToggle />
-        <button className='px-4 py-2 bg-[#1167B1] hover:bg-[#1166b1cf] rounded-[20px] text-white border-none'>Log In</button>
+            <div className='flex gap-2 items-center'>
+              <ThemeToggle />
+              <LogInButton />
+            </div>
+          </div>
+        }
       </div>
     </div>
   )
