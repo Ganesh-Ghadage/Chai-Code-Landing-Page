@@ -9,22 +9,22 @@ function Hero() {
         <p>Trusted by 1.5M Code Learners</p>
       </div>
       <div className='mb-4'>
-      <h1 className='text-5xl font-semibold'>
+      <h1 className='text-xl md:text-5xl font-semibold'>
         Consistency and Community
       </h1>
-      <h1 className='text-5xl font-semibold'>
+      <h1 className='text-xl md:text-5xl font-semibold'>
         Learning for coding courses
       </h1>
       </div>
       
-      <p className='w-[60%] text-lg my-2'>
+      <p className='w-[60%] text-md md:text-lg my-2'>
         Content is every where, we provide a learning
         experience that is unmatched. Bounties, peer learning
         peer code reviews, Virtual hostel, Alumni Network, Doubt sessions,
         Group projects and so many other activities to keep you on track.
       </p>
 
-      <button type="button" className='relative my-5 w-[70%] md:w-fit py-2 px-2 md:px-10 md:text-xl border-none rounded-lg text-[#ff6000] bg-[#ff6f0051] '>
+      <button type="button" className='relative my-5 w-[70%] md:w-fit py-2 px-2 md:px-10 md:text-xl border-none rounded-lg text-[#ff6000] bg-[#ff6f0051] hover:bg-transparent'>
         <GlowingEffect
           blur={0}
           borderWidth={3}

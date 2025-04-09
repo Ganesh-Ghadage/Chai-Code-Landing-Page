@@ -1,5 +1,5 @@
 import { useTheme } from '@/contextAPI/ThemeProvider'
-import { ThemeToggle } from '@/components/theme-toogle'
+import { ThemeToggle } from '@/components/ui/theme-toogle'
 import { MyGraduationCap, MyScrollText, MyMessageCircleHeart } from "../icons/LucideIcons"
 import Udemy from "../icons/Udemy"
 import { NavBar } from "../ui/tubelight-navbar"
