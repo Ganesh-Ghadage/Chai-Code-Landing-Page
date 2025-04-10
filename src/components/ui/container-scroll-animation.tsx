@@ -51,7 +51,7 @@ export const LaptopContainerScroll = ({
             translateY: translateDiv,
             scale: scaleDiv
           }} 
-          className="max-w-5xl relative -top-5 md:-top-45 mx-auto w-[75%] md:w-[65%] rounded-4xl h-3 md:h-4 border-2 border-[#6C6C6C] bg-[#222222]"
+          className="max-w-5xl relative -top-5 lg:-top-45 mx-auto w-[75%] lg:w-[65%] rounded-4xl h-3 md:h-4 border-2 border-[#6C6C6C] bg-[#222222]"
           >
         </motion.div>
       </div>
@@ -78,7 +78,7 @@ export const Card = ({
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="relative transform-3d mt-36 mx-auto h-[15rem] sm:h-[30rem] md:h-[40rem] w-full border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl"
+      className="relative transform-3d mt-36 mx-auto h-[15rem] md:h-[20rem] lg:h-[40rem] w-full border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl"
     >
       <div className=" flex items-center justify-center h-full w-full backface-hidden overflow-hidden rounded-2xl bg-gray-100 dark:bg-zinc-900 md:rounded-2xl md:p-4 ">
         {children}

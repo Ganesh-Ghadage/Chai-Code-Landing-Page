@@ -25,7 +25,7 @@ function Hero() {
         Group projects and so many other activities to keep you on track.
       </p>
 
-      <button type="button" className='relative inline-flex my-5 w-[70%] md:w-[25%] h-10 border-none rounded-full hover:bg-transparent overflow-hidden p-[1.3px]'>
+      <button type="button" className='relative inline-flex my-5 w-[70%] md:w-[40%] lg:w-[25%] h-10 border-none rounded-full hover:bg-transparent overflow-hidden p-[1.3px]'>
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#f3e8d5_0%,#f97316_50%,#f3e8d5_100%)]"></span>
         <Link to='#' className='inline-flex relative w-full h-full items-center justify-evenly rounded-full  md:text-xl font-semibold text-[#4b1f04] bg-[#feb279]'> 
           Check all Live Cohorts 
