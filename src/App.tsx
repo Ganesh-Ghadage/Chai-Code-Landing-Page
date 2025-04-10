@@ -10,13 +10,16 @@ function App() {
       <div>
         <Header />
 
-        <div className='mt-20 min-h-screen'>
+        <div className='my-20 min-h-screen'>
           <Hero />
         </div>
 
-        <div className='mb-20'>
+        <div className='mb-20 mt-40'>
           <Tweets />
         </div>
+
+          
+        
       </div>
     </>
   )
