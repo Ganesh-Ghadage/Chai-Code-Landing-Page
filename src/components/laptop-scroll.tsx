@@ -1,5 +1,5 @@
 
-import { LaptopContainerScroll } from "../ui/container-scroll-animation";
+import { LaptopContainerScroll } from "./ui/container-scroll-animation";
 
 
 export function LaptopScroll() {

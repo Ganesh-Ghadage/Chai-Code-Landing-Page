@@ -1,5 +1,5 @@
 import { useTheme } from '@/contextAPI/ThemeProvider'
-import { ThemeToggle } from '@/components/ui/theme-toogle'
+import { ThemeToggle } from '@/components/theme-toogle'
 import { MyGraduationCap, MyScrollText, MyMessageCircleHeart } from "../icons/LucideIcons"
 import Udemy from "../icons/Udemy"
 import { NavBar } from "../ui/tubelight-navbar"
@@ -7,7 +7,7 @@ import { useMobileView } from '@/hooks/useMobileView'
 
 import SideBarMenu from '../ui/sidebar-menu'
 import LogInButton from '../ui/logIn-button'
-import ChaicodeLogo from '../ui/chaicode-logo'
+import ChaicodeLogo from '../chaicode-logo'
 
 function Header() {
   const {theme} = useTheme()

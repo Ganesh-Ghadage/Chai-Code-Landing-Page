@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { tweets } from '@/shared/tweetsData'
 import { TweetGrid } from '../ui/tweet-grid'
 import { Button } from '../ui/button'
 import { cn } from '@/lib/utils'
 
 function Tweets() {
-  // const [tweets, setTweets] = useState()
   const [showMore, setShowMore] = useState<boolean>(false)
 
   const tweetsIds = tweets.map(tweet => tweet.id)

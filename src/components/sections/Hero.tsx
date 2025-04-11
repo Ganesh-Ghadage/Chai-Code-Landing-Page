@@ -1,7 +1,6 @@
 import { Link } from 'react-scroll'
-import LiveBlink from '../ui/live-blink'
-import { GlowingEffect } from '../ui/glowing-effect'
-import { LaptopScroll } from '../ui/laptop-scroll'
+import LiveBlink from '../live-blink'
+import { LaptopScroll } from '../laptop-scroll'
 
 function Hero() {
   return (
