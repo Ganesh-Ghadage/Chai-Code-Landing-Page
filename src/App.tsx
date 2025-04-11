@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/sections/Header'
 import Hero from './components/sections/Hero'
+import POW from './components/sections/ProofOfWork'
 import Tweets from './components/sections/Tweets'
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
           <Tweets />
         </div>
 
-          
+        <div className='mb-20'>
+          <POW />
+        </div>
         
       </div>
     </>

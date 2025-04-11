@@ -128,6 +128,10 @@
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
   }
+
+  .marquee {
+    animation: marquee var(--duration, 30s) linear infinite;
+  }
 }
 
 @keyframes blink {
@@ -139,5 +143,11 @@
   }
   100% {
     opacity: 0.2;
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
   }
 }
