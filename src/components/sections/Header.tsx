@@ -6,7 +6,7 @@ import { NavBar } from "../ui/tubelight-navbar"
 import { useMobileView } from '@/hooks/useMobileView'
 
 import SideBarMenu from '../ui/sidebar-menu'
-import LogInButton from '../ui/logIn-button'
+import LogInButton from '../logIn-button'
 import ChaicodeLogo from '../chaicode-logo'
 
 function Header() {
