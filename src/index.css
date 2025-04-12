@@ -120,8 +120,8 @@
 }
 
 @layer utilities {
-  .blink {
-    animation: blink 1s ease-in-out 0.1s infinite;
+  .slide {
+    animation: slide 5s ease-in-out 10s;
   }
 
   .fade-bottom {
@@ -134,15 +134,12 @@
   }
 }
 
-@keyframes blink {
+@keyframes slide {
   0% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 1;
+    width: 0%;
   }
   100% {
-    opacity: 0.2;
+    width: full;
   }
 }
 

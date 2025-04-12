@@ -1,4 +1,5 @@
 import './App.css'
+import Cohort from './components/sections/Cohort'
 import Header from './components/sections/Header'
 import Hero from './components/sections/Hero'
 import POW from './components/sections/ProofOfWork'
@@ -19,8 +20,12 @@ function App() {
           <Tweets />
         </div>
 
-        <div className='mb-20'>
+        <div className=''>
           <POW />
+        </div>
+
+        <div>
+          <Cohort />
         </div>
         
       </div>
