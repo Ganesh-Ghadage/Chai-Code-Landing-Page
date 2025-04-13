@@ -1,6 +1,5 @@
 import { FocusCards } from '../ui/focus-cards'
 import { cohortData } from '@/shared/cohortData'
-import BottomLine from '../bottom-line'
 import Heading from '../heading'
 
 function Cohort() {
