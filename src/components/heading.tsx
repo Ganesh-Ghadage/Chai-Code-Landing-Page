@@ -13,10 +13,12 @@ function Heading({heading, description, className}: headingProps) {
       'mb-6 flex flex-col items-center',
       className
     )}>
-      <h1 className='text-4xl md:text-5xl font-bold opacity-100 transform-none'>
-        <span className='bg-gradient-to-r from-orange-400 to-amber-500 text-transparent bg-clip-text'>{heading}</span>
-      </h1>
-      <BottomLine className='-z-10' />
+      <div className='w-fit mx-auto flex flex-col items-center'>
+        <h1 className='text-4xl md:text-5xl font-bold opacity-100 transform-none'>
+          <span className='bg-gradient-to-r from-orange-400 to-amber-500 text-transparent bg-clip-text'>{heading}</span>
+        </h1>
+        <BottomLine className='-z-10' />
+      </div>
       <p className='text-secondary text-xl font-semibold'>{description}</p>
     </div>
   )

@@ -5,6 +5,7 @@ import Header from './components/sections/Header'
 import Hero from './components/sections/Hero'
 import POW from './components/sections/ProofOfWork'
 import Tweets from './components/sections/Tweets'
+import KeyBenifits from './components/sections/KeyBenifits'
 
 function App() {
 
@@ -33,6 +34,9 @@ function App() {
           <Udemy />
         </div>
         
+        <div>
+          <KeyBenifits />
+        </div>
       </div>
     </>
   )
