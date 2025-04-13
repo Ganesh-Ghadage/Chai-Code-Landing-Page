@@ -3,6 +3,7 @@ import { tweets } from '@/shared/tweetsData'
 import { TweetGrid } from '../ui/tweet-grid'
 import { Button } from '../ui/button'
 import { cn } from '@/lib/utils'
+import Heading from '../heading'
 
 function Tweets() {
   const [showMore, setShowMore] = useState<boolean>(false)
@@ -11,9 +12,8 @@ function Tweets() {
 
   return (
     <div>
-      <p className='text-secondary text-xl'>Love that we get from our community</p>
 
-      <h1 className='text-secondary text-5xl font-semibold'>Tweet Love</h1>
+      <Heading heading='Tweet Love' description='Love that we get from our community' />
 
       <div className={cn('overflow-hidden',
         showMore && "h-fit",
