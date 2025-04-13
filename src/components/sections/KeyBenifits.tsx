@@ -1,6 +1,5 @@
 import BenifitsGrid from "../benifits-grid"
 import Heading from "../heading"
-import { Network } from "../network"
 
 function KeyBenifits() {
   return (
