@@ -1,4 +1,5 @@
 import './App.css'
+import Udemy from './components/sections/Udemy'
 import Cohort from './components/sections/Cohort'
 import Header from './components/sections/Header'
 import Hero from './components/sections/Hero'
@@ -24,8 +25,12 @@ function App() {
           <POW />
         </div>
 
-        <div>
+        <div className='mb-20'>
           <Cohort />
+        </div>
+
+        <div>
+          <Udemy />
         </div>
         
       </div>
