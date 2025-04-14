@@ -89,6 +89,7 @@ export function Network() {
         containerRef={containerRef}
         fromRef={divRefs[0]}
         toRef={divRefs[5]}
+        reverse={true}
       />
       <AnimatedBeam
         duration={4}
@@ -101,12 +102,14 @@ export function Network() {
         containerRef={containerRef}
         fromRef={divRefs[5]}
         toRef={divRefs[8]}
+        
       />
       <AnimatedBeam
         duration={4}
         containerRef={containerRef}
         fromRef={divRefs[0]}
         toRef={divRefs[14]}
+        reverse={true}
       />
       <AnimatedBeam
         duration={4}
@@ -119,6 +122,7 @@ export function Network() {
         containerRef={containerRef}
         fromRef={divRefs[5]}
         toRef={divRefs[13]}
+        reverse={true}
       />
       <AnimatedBeam
         duration={4}
@@ -137,18 +141,21 @@ export function Network() {
         containerRef={containerRef}
         fromRef={divRefs[10]}
         toRef={divRefs[8]}
+        reverse={true}
       />
       <AnimatedBeam
         duration={4}
         containerRef={containerRef}
         fromRef={divRefs[14]}
         toRef={divRefs[11]}
+        reverse={true}
       />
       <AnimatedBeam
         duration={4}
         containerRef={containerRef}
         fromRef={divRefs[14]}
         toRef={divRefs[3]}
+        reverse={true}
       />
       <AnimatedBeam
         duration={4}
@@ -167,6 +174,7 @@ export function Network() {
         containerRef={containerRef}
         fromRef={divRefs[6]}
         toRef={divRefs[12]}
+        reverse={true}
       />
     </div>
   );

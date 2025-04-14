@@ -11,7 +11,7 @@ function BenifitsGrid() {
 
           return (
             <AnimatedBackground
-              className='rounded-lg bg-zinc-100 dark:bg-zinc-800'
+              className='rounded-lg bg-primary/10'
               transition={{
                 type: 'spring',
                 bounce: 0.2,
@@ -33,7 +33,7 @@ function BenifitsGrid() {
         })
       }
       <AnimatedBackground
-        className='rounded-lg bg-zinc-100 dark:bg-zinc-800'
+        className='rounded-lg bg-primary/10'
         transition={{
           type: 'spring',
           bounce: 0.2,
