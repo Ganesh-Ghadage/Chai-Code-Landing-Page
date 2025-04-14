@@ -6,6 +6,7 @@ import Hero from './components/sections/Hero'
 import POW from './components/sections/ProofOfWork'
 import Tweets from './components/sections/Tweets'
 import KeyBenifits from './components/sections/KeyBenifits'
+import WhyChaiCode from './components/sections/WhyChaiCode'
 
 function App() {
 
@@ -36,6 +37,10 @@ function App() {
         
         <div>
           <KeyBenifits />
+        </div>
+
+        <div>
+          <WhyChaiCode />
         </div>
       </div>
     </>
