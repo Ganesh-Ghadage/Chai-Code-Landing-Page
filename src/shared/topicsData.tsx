@@ -89,4 +89,40 @@ export const topics = [
     slug: "shadcnui",
     link: "https://youtu.be/O4AjymzpIEg?si=kwkvtNeB6sRMkPD2",
   },
+  {
+    id: 16,
+    topic: "AuthJs",
+    slug: "auth0",
+    link: "https://youtu.be/O4AjymzpIEg?si=kwkvtNeB6sRMkPD2",
+  },
+  {
+    id: 17,
+    topic: "Linux",
+    slug: "linux",
+    link: "https://youtube.com/playlist?list=PLRAV69dS1uWSH1yebxsz5BVF2acAV5hhw&si=Dkn_HIFY2aB9wh8Y",
+  },
+  {
+    id: 18,
+    topic: "Docker",
+    slug: "docker",
+    link: "https://youtube.com/playlist?list=PLRAV69dS1uWTJLvDP4Veld5F05rJAmOcp&si=WuuFqVhIGDJYezMK",
+  },
+  {
+    id: 19,
+    topic: "TypeScript",
+    slug: "typescript",
+    link: "https://youtube.com/playlist?list=PLRAV69dS1uWRPSfKzwZsIm-Axxq-LxqhW&si=J1F-oeBccVgdO7tM",
+  },
+  {
+    id: 20,
+    topic: "Prisma",
+    slug: "prisma",
+    link: "https://youtube.com/playlist?list=PLRAV69dS1uWTuDGJBa7UdqX_pxoEXy00p&si=qRy0QgMYktX6gMwU",
+  },
+  {
+    id: 21,
+    topic: "Postman",
+    slug: "postman",
+    link: "https://youtu.be/saZhtK_hBik?si=PHQlyoWydWEqMIuU",
+  },
 ]

@@ -5,7 +5,7 @@ export function Topics() {
   const springOptions = { bounce: 0.1 };
 
   return (
-    <div className='flex flex-wrap gap-20 justify-center items-center'>
+    <div className='flex flex-wrap gap-10 md:gap-15 max-w-6xl mx-auto justify-center items-center'>
       {
         topics.map((topic, i) => (
           <Magnetic
