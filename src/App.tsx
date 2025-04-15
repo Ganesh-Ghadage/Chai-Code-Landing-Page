@@ -7,6 +7,7 @@ import POW from './components/sections/ProofOfWork'
 import Tweets from './components/sections/Tweets'
 import KeyBenifits from './components/sections/KeyBenifits'
 import WhyChaiCode from './components/sections/WhyChaiCode'
+import TopicsCloud from './components/sections/TopicsCloud'
 
 function App() {
 
@@ -42,6 +43,11 @@ function App() {
         <div>
           <WhyChaiCode />
         </div>
+        
+        <div>
+          <TopicsCloud />
+        </div>
+
       </div>
     </>
   )
