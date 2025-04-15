@@ -8,6 +8,7 @@ import Tweets from './components/sections/Tweets'
 import KeyBenifits from './components/sections/KeyBenifits'
 import WhyChaiCode from './components/sections/WhyChaiCode'
 import TopicsCloud from './components/sections/TopicsCloud'
+import Community from './components/sections/Community'
 
 function App() {
 
@@ -46,6 +47,10 @@ function App() {
         
         <div>
           <TopicsCloud />
+        </div>
+        
+        <div className='my-10'>
+          <Community />
         </div>
 
       </div>

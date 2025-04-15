@@ -25,7 +25,7 @@ export function Topics() {
                 actionArea='global'
                 range={200}
               >
-                <a href={topic.link} className='flex flex-col gap-2 '>
+                <a href={topic.link} className='flex flex-col gap-2 min-w-10'>
                   <Magnetic
                     intensity={0.3}
                     springOptions={springOptions}
