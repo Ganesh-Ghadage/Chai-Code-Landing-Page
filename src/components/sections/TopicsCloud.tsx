@@ -1,4 +1,3 @@
-import React from 'react'
 import { Topics } from '../topics'
 import Heading from '../heading'
 

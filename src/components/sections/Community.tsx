@@ -11,7 +11,7 @@ function Community() {
           <h1 className="text-secondary text-4xl md:text-6xl text-wrap text-start font-bold">Join our community where creativity thrives.</h1>
           <Button className="w-fit p-4 self-center md:self-start">80,000 Active coders in Discord</Button>
           <Button 
-            className="w-fit self-center bg-transparent border text-[#5865F2] py-8 px-4 hover:text-[#5865F2] hover:bg-[#E0E3FF]"
+            className="w-fit self-center bg-transparent border text-[#5865F2] py-8 px-4 hover:bg-[#E0E3FF]"
           >
             <a href="https://hitesh.ai/discord"
               className="w-full flex gap-4"

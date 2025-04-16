@@ -38,7 +38,7 @@ export function Topics() {
                     intensity={0.1}
                     springOptions={springOptions}
                     actionArea='global'
-                    range={400}
+                    range={300}
                   >
                     <span className='text-secondary text-lg font-semibold'>{topic.topic}</span>
                   </Magnetic>
