@@ -9,6 +9,7 @@ import KeyBenifits from './components/sections/KeyBenifits'
 import WhyChaiCode from './components/sections/WhyChaiCode'
 import TopicsCloud from './components/sections/TopicsCloud'
 import Community from './components/sections/Community'
+import FreeAPI from './components/sections/FreeAPI'
 
 function App() {
 
@@ -51,6 +52,10 @@ function App() {
         
         <div className='my-10'>
           <Community />
+        </div>
+
+        <div>
+          <FreeAPI />
         </div>
 
       </div>
