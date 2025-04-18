@@ -1,4 +1,3 @@
-import { useTheme } from '@/contextAPI/ThemeProvider'
 import { ThemeToggle } from '@/components/theme-toogle'
 import { MyGraduationCap, MyScrollText, MyMessageCircleHeart } from "../icons/LucideIcons"
 import Udemy from "../icons/Udemy"
@@ -10,7 +9,6 @@ import LogInButton from '../logIn-button'
 import ChaicodeLogo from '../chaicode-logo'
 
 function Header() {
-  const {theme} = useTheme()
   const isMobile = useMobileView()
 
   const navItems = [
@@ -26,12 +24,12 @@ function Header() {
         {
           isMobile ? 
           <div className='w-full flex justify-between items-center'>
-            <ChaicodeLogo theme={theme} />
+            <ChaicodeLogo />
             <SideBarMenu items={navItems} />    
           </div> 
           : 
           <div className='w-full flex justify-between items-center'>
-            <ChaicodeLogo theme={theme} />
+            <ChaicodeLogo />
             <NavBar items={navItems} />
 
             <div className='flex gap-2 items-center'>
