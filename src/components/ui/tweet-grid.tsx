@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority"
-import { Tweet } from "react-tweet"
 
 import { cn } from "@/lib/utils"
+import { TweetCard } from "./tweet-card"
 
 const tweetGridVariants = cva("max-w-4xl md:max-w-6xl px-2 mx-auto w-full", {
   variants: {
@@ -44,9 +44,9 @@ function TweetGrid({ tweets, columns, spacing, className }: TweetGridProps) {
       {tweets.map((tweetId, i) => (
         <div
           key={`${tweetId}-${i}`}
-          className={cn(tweetItemVariants({ spacing }), "overflow-hidden -mb-8")}
+          className={cn(tweetItemVariants({ spacing }), "overflow-hidden mb-4 text-secondary")}
         >
-          <Tweet id={tweetId} />
+          <TweetCard id={tweetId} />
         </div>
       ))}
     </div>

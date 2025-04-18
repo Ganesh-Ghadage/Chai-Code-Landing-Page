@@ -17,11 +17,11 @@ function Tweets() {
 
       <div className={cn('overflow-hidden',
         showMore && "h-fit",
-        !showMore && "h-[150dvh] fade-bottom"
+        !showMore && "h-[120dvh] fade-bottom"
       )}>
         <TweetGrid tweets={tweetsIds} />
       </div>
-      <Button className='bg-transparent border-2 border-primary text-primary cursor-pointer hover:text-black'
+      <Button className='bg-transparent border-2 mt-2 border-primary text-primary cursor-pointer hover:text-black'
         onClick={() => setShowMore(!showMore  )}
       >
         {showMore ? 'Show less' : 'Show More'}
