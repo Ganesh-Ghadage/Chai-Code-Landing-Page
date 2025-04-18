@@ -11,14 +11,14 @@ import TopicsCloud from './components/sections/TopicsCloud'
 import Community from './components/sections/Community'
 import FreeAPI from './components/sections/FreeAPI'
 import MobileApp from './components/sections/MobileApp'
+import Footer from './components/sections/Footer'
 
 function App() {
 
   return (
     <>
-      <div>
-        <Header />
-
+      <Header />
+      <div className='max-w-[1280px] mx-auto'>
         <div className='my-20 min-h-screen'>
           <Hero />
         </div>
@@ -59,10 +59,14 @@ function App() {
           <FreeAPI />
         </div>
 
-        <div>
+        <div className='my-10'>
           <MobileApp />
         </div>
 
+      </div>
+
+      <div className='w-full h-full'>
+        <Footer />
       </div>
     </>
   )
