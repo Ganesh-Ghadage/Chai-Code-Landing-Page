@@ -1,6 +1,5 @@
 import * as React from "react"
 import { cn } from "@/lib/utils"
-import { Logos } from "@/shared/logosData"
 
 interface MarqueeProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode
@@ -11,7 +10,7 @@ interface MarqueeProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function Marquee({
   children,
-  pauseOnHover = true,
+  pauseOnHover = false,
   direction = "left",
   speed = 30,
   className,
@@ -20,7 +19,7 @@ export function Marquee({
   return (
     <div 
       className={cn(
-        "w-full overflow-hidden sm:mt-24 mt-10 z-10",
+        "w-full overflow-hidden sm:mt-24 z-10",
         className
       )} 
       {...props}
@@ -28,7 +27,7 @@ export function Marquee({
       <div className="relative flex max-w-[100vw] overflow-hidden py-5">
         <div 
           className={cn(
-            "flex w-max marquee",
+            "flex gap-12 w-max marquee",
             pauseOnHover && "hover:[animation-play-state:paused]",
             direction === "right" && "marquee"
           )}
@@ -44,18 +43,72 @@ export function Marquee({
 
 
 export function MarqueeStrip() {
-  const arr = [Logos.tailwindcss, Logos.aws, Logos.postman, Logos.react, Logos.node, Logos.express, Logos.typescript, Logos.javascript, Logos.html, Logos.mongodb, Logos.postgres, Logos.docker, Logos.git, Logos.gitHub]
 
   return (
-    <Marquee>
-      {arr.map((Logo, index) => (
-        <div
-          key={index}
-          className="relative h-full w-fit mx-[4rem] flex items-center justify-start -mt-10 z-10"
-        >
-          <Logo />
-        </div>
-      ))}
+    <Marquee 
+      speed={10}
+      className=""
+    >
+      <img 
+        src="./src/assets/brand-logos/cred-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img 
+        src="./src/assets/brand-logos/slack-logo-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img 
+        src="./src/assets/brand-logos/microsoft-logo-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img 
+        src="./src/assets/brand-logos/netflix-2-logo-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img 
+        src="./src/assets/brand-logos/google-2015-logo-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img 
+        src="./src/assets/brand-logos/visa-logo-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img 
+        src="./src/assets/brand-logos/amazon-2-logo-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img 
+        src="./src/assets/brand-logos/samsung-logo-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img 
+        src="./src/assets/brand-logos/oracle-6-logo-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img 
+        src="./src/assets/brand-logos/flipkart-logo-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img 
+        src="./src/assets/brand-logos/cisco-2-logo-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img 
+        src="./src/assets/brand-logos/bookingcom-logo-svgrepo-com.svg" 
+        alt="" 
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
     </Marquee>
   )
 }
