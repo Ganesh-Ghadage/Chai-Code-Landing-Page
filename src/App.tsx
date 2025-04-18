@@ -10,6 +10,7 @@ import WhyChaiCode from './components/sections/WhyChaiCode'
 import TopicsCloud from './components/sections/TopicsCloud'
 import Community from './components/sections/Community'
 import FreeAPI from './components/sections/FreeAPI'
+import MobileApp from './components/sections/MobileApp'
 
 function App() {
 
@@ -56,6 +57,10 @@ function App() {
 
         <div>
           <FreeAPI />
+        </div>
+
+        <div>
+          <MobileApp />
         </div>
 
       </div>
