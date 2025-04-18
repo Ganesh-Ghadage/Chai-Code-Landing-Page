@@ -1,7 +1,5 @@
 import { Bell, Smartphone, Zap } from "lucide-react"
-import Heading from "../heading"
 import Mobile from "../mobile"
-import { Button } from "../ui/button"
 import { useMobileView } from "@/hooks/useMobileView"
 
 function MobileApp() {
