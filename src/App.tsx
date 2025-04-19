@@ -23,7 +23,7 @@ function App() {
           <Hero />
         </div>
 
-        <div className='mb-20 mt-40'>
+        <div className='mb-20 -mt-20'>
           <Tweets />
         </div>
 
