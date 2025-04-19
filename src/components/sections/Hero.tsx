@@ -23,7 +23,7 @@ function Hero() {
       </div>
 
       <div className='flex flex-col items-center gap-2 mb-4 max-w-[70%]'>
-        <h1 className='flex gap-4 text-xl md:text-6xl font-bold'>
+        <h1 className='flex flex-col md:flex-row gap-0 md:gap-4 text-5xl lg:text-6xl font-bold'>
           <span>
             <AuroraText>
               Consistency
@@ -39,7 +39,7 @@ function Hero() {
           </span>
         </h1>
         
-        <h1 className='text-xl md:text-5xl font-semibold'>
+        <h1 className='text-xl md:text-3xl lg:text-5xl font-semibold'>
           An unmatched Learning Experience for <AuroraText>coding</AuroraText> courses
         </h1>   
       </div>
@@ -51,7 +51,7 @@ function Hero() {
         Group projects and so many other activities to keep you on track.
       </p>
 
-      <div className='flex gap-4 my-4'>
+      <div className='flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 my-4'>
         <div className='relative group flex gap-2 py-2 px-4 rounded-full border-1 w-fit hover:bg-secondary/10'>
           <Users className='text-[#FFC600]' />
           <p className='group-hover:text-[#FFC600]'>Peer learning</p>

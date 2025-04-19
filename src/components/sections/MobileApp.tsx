@@ -1,19 +1,24 @@
 import { Bell, Smartphone, Zap } from "lucide-react"
 import Mobile from "../mobile"
 import { useMobileView } from "@/hooks/useMobileView"
+import { AuroraText } from "../magicui/aurora-text"
 
 function MobileApp() {
   const isMobile = useMobileView()
 
   return (
     <div className="flex flex-col gap-4 mx-4 ">
-      {isMobile && <h1 className="text-primary text-4xl font-bold">Learn on the go</h1> }
+      {isMobile && <h1 className="text-primary text-4xl font-bold">
+        <AuroraText>Learn on the go</AuroraText>
+      </h1> }
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
         <div className="w-full h-full flex justify-center" >
           <Mobile />
         </div>
         <div className="flex flex-col gap-3 md:gap-6 mt-2">
-          {!isMobile && <h1 className="text-primary text-6xl font-bold">Learn on the go</h1>}
+          {!isMobile && <h1 className="text-primary text-6xl font-bold">
+              <AuroraText>Learn on the go</AuroraText>
+          </h1>}
           <p className="text-secondary text-lg md:text-xl ">Take your coding journey anywhere with the ChaiCode mobile app. Access courses, join live sessions, and connect with the community - all from your pocket.</p>
 
           <div className="flex flex-col gap-3 md:gap-6"> 

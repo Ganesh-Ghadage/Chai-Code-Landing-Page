@@ -19,11 +19,15 @@ export const LaptopContainerScroll = ({
   };
 
   const divTranslateDimensions = () => {
-    return isMobile ? [-70, 0] : [-70, 80];
+    return isMobile ? [-70, 10] : [-70, 80];
   };
 
   const divScaleDimensions = () => {
     return isMobile ? [1.3, 1.24] : [1.3, 1.05];
+  };
+  
+  const translateYDiemnsions = () => {
+    return isMobile ? [-100, 0 , 0] : [-280, -150, 0];
   };
 
   const rotate = useTransform(scrollYProgress, [1, 0.5, 0], [-100, -50, 0]);
@@ -31,11 +35,11 @@ export const LaptopContainerScroll = ({
   const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const translateDiv = useTransform(scrollYProgress, [1, 0], divTranslateDimensions());
   const scaleDiv = useTransform(scrollYProgress, [1, 0], divScaleDimensions());
-  const translateY = useTransform(scrollYProgress, [1, 0.5, 0], [-280, -150, 20]);
+  const translateY = useTransform(scrollYProgress, [1, 0.5, 0], translateYDiemnsions());
 
   return (
     <motion.div
-      className="h-full flex mt-10 items-center justify-center relative"
+      className="h-full flex -mt-20 md:mt-20 lg:mt-10 items-center justify-center relative"
       ref={containerRef}
       
     >
@@ -60,7 +64,7 @@ export const LaptopContainerScroll = ({
             translateY: translateDiv,
             scale: scaleDiv
           }} 
-          className="max-w-5xl relative -top-5 lg:-top-52 mx-auto w-[75%] lg:w-[65%] rounded-4xl h-3 md:h-4 border-2 border-[#6C6C6C] bg-[#222222]"
+          className="max-w-5xl relative -top-7 md:-top-10 lg:-top-52 mx-auto w-[75%] lg:w-[65%] rounded-4xl h-3 md:h-4 border-2 border-[#6C6C6C] bg-[#222222]"
           >
         </motion.div>
       </motion.div>

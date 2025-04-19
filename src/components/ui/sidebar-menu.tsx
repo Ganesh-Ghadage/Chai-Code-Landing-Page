@@ -10,6 +10,7 @@ interface NavItem {
   name: string
   url: string
   icon: ReactNode
+  external: boolean
 }
 
 interface NavBarProps {
@@ -17,7 +18,8 @@ interface NavBarProps {
   className?: string
 }
 
-function SideBarMenu({ items, className }: NavBarProps) {
+function 
+SideBarMenu({ items, className }: NavBarProps) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -53,7 +55,7 @@ function SideBarMenu({ items, className }: NavBarProps) {
             </button>
           </div>
 
-          <NavBar items={items} open={open} />
+          <NavBar items={items} open={open} setOpen={setOpen} />
           <LogInButton className="self-end mr-4 mt-10" />
         </div>
           </DrawerContent>

@@ -13,11 +13,19 @@ interface NavItem {
 interface NavBarProps {
   items: NavItem[]
   className?: string
-  open?: boolean
+  open?: boolean,
+  setOpen?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export function NavBar({ items, className, open }: NavBarProps) {
+export function NavBar({ items, className, open, setOpen }: NavBarProps) {
   const [activeTab, setActiveTab] = useState('')
+
+  const handleClick = (name: string) => {
+    setActiveTab(name)
+    if(open && setOpen) {
+      setOpen(false)
+    }
+  }
 
   return (
     <div
@@ -38,7 +46,7 @@ export function NavBar({ items, className, open }: NavBarProps) {
             <a
               key={item.name}
               href={item.url}
-              onClick={() => setActiveTab(item.name)}
+              onClick={() => handleClick(item.name)}
               className={cn(
                 "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors",
                 "text-secondary hover:text-primary",
@@ -48,10 +56,10 @@ export function NavBar({ items, className, open }: NavBarProps) {
               )}
             >
               <div className="flex gap-2">
-                <span className="">
+                <span>
                   {item.icon}
                 </span>
-                <span className="">{item.name}</span>
+                <span>{item.name}</span>
               </div>
               {isActive && (
                 <motion.div
@@ -82,7 +90,7 @@ export function NavBar({ items, className, open }: NavBarProps) {
               smooth={true} 
               duration={500} 
               offset={-100}
-              onClick={() => setActiveTab(item.name)}
+              onClick={() => handleClick(item.name)}
               className={cn(
                 "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors",
                 "text-secondary hover:text-primary",

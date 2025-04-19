@@ -12,6 +12,7 @@ import Community from './components/sections/Community'
 import FreeAPI from './components/sections/FreeAPI'
 import MobileApp from './components/sections/MobileApp'
 import Footer from './components/sections/Footer'
+import Seperator from './components/seperator'
 
 function App() {
 
@@ -20,44 +21,66 @@ function App() {
       <Header />
       <div className='max-w-[1280px] mx-auto mt-20'>
         <div className='mb-20 min-h-screen'>
-          <Hero />
+          <Hero /> 
         </div>
 
-        <div id='review' className='mb-20 -mt-20'>
+        <div className='-mt-72 md:-mt-20'>
+          <Seperator />
+        </div>
+
+        <div id='review' className='my-10'>
           <Tweets />
         </div>
 
-        <div className=''>
+        <Seperator />
+        
+        <div className='my-10'>
           <POW />
         </div>
 
-        <div id='cohort' className='mb-20'>
+        <Seperator />
+
+        <div id='cohort' className='my-10'>
           <Cohort />
         </div>
 
-        <div id='udemy'>
+        <Seperator />
+
+        <div id='udemy' className='my-10'>
           <Udemy />
         </div>
+
+        <Seperator />
         
-        <div>
+        <div className='my-10'>
           <KeyBenifits />
         </div>
 
-        <div>
+        <Seperator />
+
+        <div className='my-10'>
           <WhyChaiCode />
         </div>
+
+        <Seperator />
         
-        <div>
+        <div className='my-10'>
           <TopicsCloud />
         </div>
+
+        <Seperator />
         
         <div className='my-10'>
           <Community />
         </div>
 
-        <div>
+        <Seperator />
+
+        <div className='my-10'>
           <FreeAPI />
         </div>
+
+        <Seperator />
 
         <div className='my-10'>
           <MobileApp />

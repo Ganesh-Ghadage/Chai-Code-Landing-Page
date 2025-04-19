@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils'
 import BottomLine from './bottom-line'
+import { AuroraText } from './magicui/aurora-text'
 
 type headingProps = {
   heading: string,
@@ -15,7 +16,8 @@ function Heading({heading, description, className}: headingProps) {
     )}>
       <div className='w-fit mx-auto flex flex-col items-center'>
         <h1 className='text-3xl md:text-5xl font-bold opacity-100 transform-none'>
-          <span className='bg-gradient-to-r from-orange-400 to-amber-500 text-transparent bg-clip-text'>{heading}</span>
+          {/* <span className='bg-gradient-to-r from-orange-400 to-amber-500 text-transparent bg-clip-text'>{heading}</span> */}
+          <AuroraText>{heading}</AuroraText>
         </h1>
         <BottomLine className='-z-10' />
       </div>
