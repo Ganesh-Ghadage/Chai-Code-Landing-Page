@@ -18,12 +18,12 @@ function App() {
   return (
     <>
       <Header />
-      <div className='max-w-[1280px] mx-auto'>
-        <div className='my-20 min-h-screen'>
+      <div className='max-w-[1280px] mx-auto mt-20'>
+        <div className='mb-20 min-h-screen'>
           <Hero />
         </div>
 
-        <div className='mb-20 -mt-20'>
+        <div id='review' className='mb-20 -mt-20'>
           <Tweets />
         </div>
 
@@ -31,11 +31,11 @@ function App() {
           <POW />
         </div>
 
-        <div className='mb-20'>
+        <div id='cohort' className='mb-20'>
           <Cohort />
         </div>
 
-        <div>
+        <div id='udemy'>
           <Udemy />
         </div>
         

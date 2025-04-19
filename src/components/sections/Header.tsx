@@ -12,10 +12,10 @@ function Header() {
   const isMobile = useMobileView()
 
   const navItems = [
-    { name: 'Cohorts', url: '#', icon: <MyGraduationCap /> },
-    { name: 'Udemy', url: '#', icon: <Udemy /> },
-    { name: 'Docs', url: '#', icon: <MyScrollText /> },
-    { name: 'Reviews', url: '#', icon: <MyMessageCircleHeart /> }
+    { name: 'Cohorts', url: 'cohort', icon: <MyGraduationCap />, external: false },
+    { name: 'Udemy', url: 'udemy', icon: <Udemy />, external: false },
+    { name: 'Docs', url: 'https://docs.chaicode.com/', icon: <MyScrollText />, external: true },
+    { name: 'Reviews', url: 'review', icon: <MyMessageCircleHeart />, external: false }
   ]
 
   return (

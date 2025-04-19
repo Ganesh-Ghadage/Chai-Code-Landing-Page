@@ -1,4 +1,3 @@
-import { Link } from 'react-scroll'
 import LiveBlink from '../live-blink'
 import { LaptopScroll } from '../laptop-scroll'
 import { AuroraText } from '../magicui/aurora-text'
