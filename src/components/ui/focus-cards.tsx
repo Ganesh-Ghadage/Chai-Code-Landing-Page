@@ -80,6 +80,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
             y: 10
           }}
           className="inline-block"
+          key={`cohort-card-${card.title}`}
         >
           <Card
             key={card.title}
