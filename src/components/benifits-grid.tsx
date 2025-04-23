@@ -1,5 +1,6 @@
 import { benifitsData } from '@/shared/benifitsData'
 import { Network } from './network'
+import { motion } from "motion/react";
 
 function BenifitsGrid() {
   return (
@@ -9,7 +10,26 @@ function BenifitsGrid() {
         const Icon = data.icon
 
         return (
-          <div key={`benifits-${i}`} className="border-2 border-border p-4 rounded-xl col-span-1" data-id={`card-${i}`}>
+          <motion.div 
+            key={`benifits-${i}`} 
+            className="border-2 border-border p-4 rounded-xl col-span-1" 
+            initial={{
+              opacity: 0,
+              filter: 'blur(5px)',
+              y: 50
+            }}
+            whileInView={{
+              opacity: 1,
+              filter: 'blur(0px)',
+              y: 0,
+              transition: {
+                delay: (i * 0.15),
+                duration: 0.3,
+                ease: "easeInOut"
+              }
+            }}
+            viewport={{ once: true }}
+          >
             <div className='flex justify-center items-center gap-4 text-start'>
               <Icon className='min-w-15 h-10 text-primary' /> 
               <div className=''>
@@ -17,11 +37,29 @@ function BenifitsGrid() {
                 <p>{data.description}</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         )
         })
       }
-      <div className="border-2 border-border p-4 rounded-xl col-span-1 md:col-span-2 lg:col-span-3">
+      <motion.div 
+        className="border-2 border-border p-4 rounded-xl col-span-1 md:col-span-2 lg:col-span-3 inline-block"
+        initial={{
+          opacity: 0,
+          filter: 'blur(5px)',
+          y: 50
+        }}
+        whileInView={{
+          opacity: 1,
+          filter: 'blur(0px)',
+          y: 0,
+          transition: {
+            delay: 1,
+            duration: 0.3,
+            ease: "easeInOut"
+          }
+        }}
+        viewport={{ once: true }}
+      >
         <div className='flex flex-col md:flex-row justify-center items-center gap-4 text-start'>
           <div className='w-full'>
             <Network />
@@ -31,7 +69,7 @@ function BenifitsGrid() {
             <p>The alumni Network that you always wished for in your college. We have a dedicated platform where students get to know each other, do projects, make agencies and join Hackathons. \n Our HR team also post regular job updates that you can apply directly whenever you are ready</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
