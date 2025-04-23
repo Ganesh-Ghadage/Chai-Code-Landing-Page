@@ -21,7 +21,7 @@ function MobileApp() {
           </h1>}
           <p className="text-secondary text-lg md:text-xl ">Take your coding journey anywhere with the ChaiCode mobile app. Access courses, join live sessions, and connect with the community - all from your pocket.</p>
 
-          <div className="flex flex-col gap-3 md:gap-6"> 
+          <div className="flex flex-col mx-auto gap-3 md:gap-6"> 
             <div className="flex items-center gap-3 md:gap-6">
               <div className="w-8 md:w-10 h-8 md:h-10 bg-primary/30 rounded-full flex items-center justify-center">
                 <Zap className="w-5 md:w-8 text-primary" />

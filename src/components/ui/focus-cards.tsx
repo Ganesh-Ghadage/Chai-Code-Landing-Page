@@ -79,7 +79,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
             opacity: 0,
             y: 10
           }}
-          className="inline-block"
+          className="inline-block w-fit md:w-full mx-auto"
           key={`cohort-card-${card.title}`}
         >
           <Card

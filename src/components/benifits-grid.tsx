@@ -30,7 +30,7 @@ function BenifitsGrid() {
             }}
             viewport={{ once: true }}
           >
-            <div className='flex justify-center items-center gap-4 text-start'>
+            <div className='flex md:justify-center items-center gap-4 text-start'>
               <Icon className='min-w-15 h-10 text-primary' /> 
               <div className=''>
                 <h1 className='text-2xl text-primary font-semibold'>{data.title}</h1>
@@ -60,7 +60,7 @@ function BenifitsGrid() {
         }}
         viewport={{ once: true }}
       >
-        <div className='flex flex-col md:flex-row justify-center items-center gap-4 text-start'>
+        <div className='flex flex-col md:flex-row md:justify-center md:items-center gap-4 text-start'>
           <div className='w-full'>
             <Network />
           </div>

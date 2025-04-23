@@ -69,7 +69,7 @@ function TweetGrid({ tweets, columns, spacing, className }: TweetGridProps) {
       {tweets.map((tweetId, i) => (
         <motion.div
           key={`${tweetId}-${i}`}
-          className={cn(tweetItemVariants({ spacing }), "overflow-hidden mb-4 text-secondary")}
+          className={cn(tweetItemVariants({ spacing }), "overflow-hidden mb-4 text-secondary w-fit mx-auto")}
           style={{
             opacity: 0,
             filter: 'blur(5px)'
