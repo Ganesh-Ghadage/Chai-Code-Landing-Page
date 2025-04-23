@@ -156,6 +156,15 @@
     background: #FCD27E;
     background: linear-gradient(90deg, rgba(252, 210, 126, 0) 0%, rgba(252, 210, 126, 1) 15%, rgba(233, 112, 10, 1) 35%, rgba(232, 107, 5, 1) 65%, rgba(232, 163, 76, 1) 82%, rgba(232, 163, 76, 0) 100%);  
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 @keyframes marquee {
