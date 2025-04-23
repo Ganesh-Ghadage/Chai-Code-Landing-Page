@@ -1,16 +1,36 @@
 import { chaiCodeData } from '@/shared/whyChaiCodeData'
 import { cn } from '@/lib/utils'
 import { Github, Linkedin, Twitter } from 'lucide-react'
+import { motion } from "motion/react";
 
 function ChaiCodeGrid() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4 text-secondary">
       {
         chaiCodeData.map((data, i) => (
-          <div key={`chaicode-${i}`} className={cn(
-            "border-2 border-border p-4 rounded-xl",
-            data.className
-          )}>
+          <motion.div 
+            key={`chaicode-${i}`} 
+            className={cn(
+              "border-2 border-border p-4 rounded-xl",
+              data.className
+            )}
+            initial={{
+              opacity: 0,
+              filter: 'blur(5px)',
+              y: 50
+            }}
+            whileInView={{
+              opacity: 1,
+              filter: 'blur(0px)',
+              y: 0,
+              transition: {
+                delay: (i * 0.15),
+                duration: 0.3,
+                ease: "easeInOut"
+              }
+            }}
+            viewport={{ once: true }}
+          >
             {data.id === 2 ?
               <div className='flex flex-col justify-between h-full w-full'>
                 <img src={data.image} alt={data.title} className='object-cover rounded-xl mb-2' />
@@ -40,7 +60,7 @@ function ChaiCodeGrid() {
                 <p className='text-start'>{data.description}</p>
               </div>
             }
-          </div>
+          </motion.div>
         ))
       }
     </div>
