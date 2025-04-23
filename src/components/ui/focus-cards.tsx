@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import CohortCard from "../cohort-card";
+import { motion, useAnimate, useInView, stagger } from "motion/react";
 
 export const Card = React.memo(
   ({
@@ -45,17 +46,49 @@ type Card = {
 
 export function FocusCards({ cards }: { cards: Card[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
+  const [scope, animate] = useAnimate()
+  const isInView = useInView(scope)
+
+  useEffect(() => {
+    if (isInView) {
+      animate(
+        "div", 
+        {
+          scale: 1,
+          opacity: 1,
+          y: 0
+        },
+        {
+          duration: 0.5,
+          delay: stagger(0.05 , {startDelay: 0.3}),
+          ease: "easeInOut"
+        }
+      )
+    }
+  }, [isInView])
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto w-full">
+    <div 
+      ref={scope}
+      className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto w-full"
+    >
       {cards.map((card, index) => (
-        <Card
-          key={card.title}
-          card={card}
-          index={index}
-          hovered={hovered}
-          setHovered={setHovered}
-        />
+        <motion.div
+          style={{
+            scale: 0,
+            opacity: 0,
+            y: 10
+          }}
+          className="inline-block"
+        >
+          <Card
+            key={card.title}
+            card={card}
+            index={index}
+            hovered={hovered}
+            setHovered={setHovered}
+          />
+        </motion.div>
       ))}
     </div>
   );
