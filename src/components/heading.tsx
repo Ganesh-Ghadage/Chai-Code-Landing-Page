@@ -1,6 +1,7 @@
 import { cn } from '@/lib/utils'
 import BottomLine from './bottom-line'
 import { AuroraText } from './magicui/aurora-text'
+import { motion } from 'motion/react'
 
 type headingProps = {
   heading: string,
@@ -10,18 +11,55 @@ type headingProps = {
 
 function Heading({heading, description, className}: headingProps) {
   return (
-    <div className={cn(
-      'mb-6 flex flex-col items-center text-center',
-      className
-    )}>
+    <div 
+      className={cn(
+        'mb-6 flex flex-col items-center text-center',
+        className
+      )}
+    >
       <div className='w-fit mx-auto flex flex-col items-center'>
-        <h1 className='text-3xl md:text-5xl font-bold opacity-100 transform-none'>
-          {/* <span className='bg-gradient-to-r from-orange-400 to-amber-500 text-transparent bg-clip-text'>{heading}</span> */}
+        <motion.h1 
+          initial={{
+            opacity: 0,
+            scale: 0.98,
+            filter: "blur(10px)"
+          }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+            filter: "blur(0px)",
+            transition: {
+              delay: 0.4,
+              duration: 0.6,
+              ease: "easeInOut"
+            },
+          }}
+          className='text-3xl md:text-5xl font-bold opacity-100 transform-none'
+        >
           <AuroraText>{heading}</AuroraText>
-        </h1>
+        </motion.h1>
         <BottomLine className='-z-10' />
       </div>
-      <p className='text-secondary text-lg md:text-xl font-semibold mx-2'>{description}</p>
+      <motion.p 
+        initial={{
+          opacity: 0,
+          scale: 0.98,
+          filter: "blur(10px)"
+        }}
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+          filter: "blur(0px)",
+          transition: {
+            delay: 0.5,
+            duration: 0.6,
+            ease: "easeInOut"
+          },
+        }}
+        className='text-secondary text-lg md:text-xl font-semibold mx-2'
+      >
+        {description}
+      </motion.p>
     </div>
   )
 }
