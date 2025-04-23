@@ -34,6 +34,7 @@ function Heading({heading, description, className}: headingProps) {
               ease: "easeInOut"
             },
           }}
+          viewport={{ once: true }}
           className='text-3xl md:text-5xl font-bold opacity-100 transform-none'
         >
           <AuroraText>{heading}</AuroraText>
@@ -56,6 +57,7 @@ function Heading({heading, description, className}: headingProps) {
             ease: "easeInOut"
           },
         }}
+        viewport={{ once: true }}
         className='text-secondary text-lg md:text-xl font-semibold mx-2'
       >
         {description}
