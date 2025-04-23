@@ -1,6 +1,7 @@
 import { Star } from 'lucide-react'
 import { Button } from '../ui/button'
 import Heading from '../heading'
+import { motion } from 'motion/react'
 
 function Udemy() {
   return (
@@ -9,7 +10,21 @@ function Udemy() {
       <Heading heading='Udemy' description='Not only in India, we are global leaders in tech education' />
 
       <div className='relative w-full flex flex-col md:flex-row gap-4 justify-center items-center'>
-        <div className='w-full h-full flex items-center p-4'>
+        <motion.div 
+          initial={{
+            x: -400,
+            opacity: 0
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            transition: {
+              delay: 0.3,
+              type: "spring"
+            }
+          }}
+          className='w-full h-full flex items-center p-4'
+        >
           <iframe 
             className='w-full rounded-xl object-cover aspect-video' 
             src="https://www.youtube.com/embed/KZ31wDjYleI?si=CuwYC9mQ_ECIwzBr" 
@@ -19,10 +34,24 @@ function Udemy() {
             referrerPolicy="strict-origin-when-cross-origin" 
             allowFullScreen
           ></iframe>
-        </div>
-        <div className='relative w-full h-full'>
+        </motion.div>
+        <motion.div 
+          initial={{
+            x: 400,
+            opacity: 0
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            transition: {
+              delay: 0.3,
+              type: "spring"
+            }
+          }}
+          className='relative w-full h-full'
+        >
           <UdemyCard />
-        </div>
+        </motion.div>
       </div>
     </div>
   )
