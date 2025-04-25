@@ -116,7 +116,7 @@ function MobileApp() {
                 y: 0
               }}
             >
-              <img className="w-full h-full" src="./src/assets/google-play.svg" alt="Play Store" />
+              <img className="w-full h-full" src="./assets/google-play.svg" alt="Play Store" />
             </motion.a>
             <motion.a 
               id="mobile-motion"
@@ -128,7 +128,7 @@ function MobileApp() {
                 y: 0
               }}
             >
-              <img className="w-full h-full" src="./src/assets/app-store.svg" alt="Play Store" />
+              <img className="w-full h-full" src="./assets/app-store.svg" alt="Play Store" />
             </motion.a>
           </div>
         </div>
