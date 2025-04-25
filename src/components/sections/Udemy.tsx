@@ -65,7 +65,7 @@ export default Udemy
 function UdemyCard() {
   return (
     <div className='w-full h-full'>
-      <img src="./src/assets/udemy-wordmark-1.svg" 
+      <img src="./assets/udemy-wordmark-1.svg" 
         className='opacity-25 absolute inset-auto w-full h-full scale-75'
       />
       <div className='relative w-fit h-fit my-auto flex flex-col gap-4 bg-amber-200/10 p-4 rounded-2xl border-2 m-4'>

@@ -20,7 +20,7 @@ export const chaiCodeData: chaiCode[] = [
     id: 2,
     title: "Hitesh Choudhary",
     description: "retired from corporate and full time YouTuber, x founder of LCO (acquired), x CTO, Sr. Director at PW. 2 YT channels (950k & 470k), stepped into 43 countries.",
-    image: "./src/assets/image.png",
+    image: "./assets/image.png",
     title2: "Approach",
     description2: "Project based courses with peer learning and bouties with many activities",
     className: "row-span-1 row-start-1 md:row-start-2 md:row-span-2 lg:row-span-3"

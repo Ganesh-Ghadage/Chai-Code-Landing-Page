@@ -53,7 +53,7 @@ function Community() {
                 className="w-full flex gap-4"
               >
                 <img 
-                  src="./src/assets/Discord-Symbol-Blurple.png"  
+                  src="./assets/Discord-Symbol-Blurple.png"  
                   alt="discord logo"
                   className="w-10 object-contain cursor-pointer"  
                 />
@@ -85,7 +85,7 @@ function Community() {
             whileTap={{
               scale: [1.1, 1, 1.1]
             }}
-            src="./src/assets/Discord-Banner_8.png" 
+            src="./assets/Discord-Banner_8.png" 
             alt="DiscordBanner" 
             className="object-cover w-full h-full rounded-4xl"
           />

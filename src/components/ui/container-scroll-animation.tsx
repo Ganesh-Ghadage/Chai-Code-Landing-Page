@@ -97,7 +97,7 @@ export const Card = ({
         {children}
       </div>
       <div className="absolute top-0 flex items-center justify-center h-full w-full backface-hidden rotate-x-180 overflow-hidden rounded-2xl md:rounded-2xl md:p-4 ">
-        <img src="./src/assets/chai-white.png" className="rotate-x-180 w-60 mx-auto"/>
+        <img src="./assets/chai-white.png" className="rotate-x-180 w-60 mx-auto"/>
       </div>
     </motion.div>
   );

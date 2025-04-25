@@ -20,7 +20,7 @@ function Mobile() {
           <div className="flex flex-col gap-1">
             <h1 className="self-start text-[12px] font-bold">Continue Learning</h1>
             <div className="flex gap-4 border border-border bg-gray-800 p-[4px] rounded-md">
-              <img className="w-15 aspect-auto rounded-sm" src="./src/assets/image.png" alt="web dev Cohort" />
+              <img className="w-15 aspect-auto rounded-sm" src="./assets/image.png" alt="web dev Cohort" />
               <div className="flex flex-col items-start">
                 <h1 className="font-bold text-[12px]">Web Dev Cohort</h1>
                 <span className="px-[3px] bg-amber-200 text-black text-[8px] rounded-[4px]">PURCHASED</span>
@@ -35,7 +35,7 @@ function Mobile() {
               <p className="text-[10px]">View All</p>
             </div>
             <div className="flex gap-6 ">
-              <div className="bg-[url(./src/assets/image.png)] bg-center bg-cover w-[250px] h-[90px] rounded-lg">
+              <div className="bg-[url(./assets/image.png)] bg-center bg-cover w-[250px] h-[90px] rounded-lg">
                 <div className="bg-black/60  h-full w-full flex flex-col items-start justify-between p-2 rounded-lg">
                   <span className="bg-amber-400 text-black rounded-[2px] text-[8px] px-[2px]">Live</span>
 
@@ -44,7 +44,7 @@ function Mobile() {
                   <p className="text-[10px]">9:00 PM - Hitesh</p>
                 </div>
               </div>
-              <div className="bg-[url(./src/assets/image.png)] bg-center bg-cover w-[250px] h-[90px] rounded-lg">
+              <div className="bg-[url(./assets/image.png)] bg-center bg-cover w-[250px] h-[90px] rounded-lg">
                 <div className="bg-black/60  h-full w-full flex flex-col items-start justify-between p-2 rounded-lg">
                   <span className="bg-amber-400 text-black rounded-[2px] text-[8px] px-[2px]">Live</span>
 
@@ -61,7 +61,7 @@ function Mobile() {
             
             <div className="flex flex-col gap-2 overflow-hidden">
               <div className="flex gap-4 border border-border bg-gray-800 p-[3px] rounded-sm">
-                <img className="w-15 aspect-auto rounded-sm" src="./src/assets/image.png" alt="web dev Cohort" />
+                <img className="w-15 aspect-auto rounded-sm" src="./assets/image.png" alt="web dev Cohort" />
                 <div className="flex flex-col items-start">
                   <h1 className="font-bold text-[12px]">Web Dev Cohort</h1>
                   <p className="text-[10px]">26 Products</p>
@@ -69,7 +69,7 @@ function Mobile() {
               </div>
 
               <div className="flex gap-4 border border-border bg-gray-800 p-[3px] rounded-sm">
-                <img className="w-15 aspect-auto rounded-sm" src="./src/assets/image.png" alt="web dev Cohort" />
+                <img className="w-15 aspect-auto rounded-sm" src="./assets/image.png" alt="web dev Cohort" />
                 <div className="flex flex-col items-start">
                   <h1 className="font-bold text-[12px]">GenAI with Python</h1>
                   <p className="text-[10px]">1 Products</p>
@@ -77,7 +77,7 @@ function Mobile() {
               </div>
 
               <div className="flex gap-4 border border-border bg-gray-800 p-[3px] rounded-sm">
-                <img className="w-15 aspect-auto rounded-sm" src="./src/assets/image.png" alt="web dev Cohort" />
+                <img className="w-15 aspect-auto rounded-sm" src="./assets/image.png" alt="web dev Cohort" />
                 <div className="flex flex-col items-start">
                   <h1 className="font-bold text-[12px]">Javascript</h1>
                   <p className="text-[10px]">2 Products</p>
