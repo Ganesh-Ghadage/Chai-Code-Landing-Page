@@ -4,6 +4,7 @@ import { TweetGrid } from '../ui/tweet-grid'
 import { Button } from '../ui/button'
 import { cn } from '@/lib/utils'
 import Heading from '../heading'
+import JoinCohortBtn from '../join-cohort-btn'
 
 function Tweets() {
   const [showMore, setShowMore] = useState<boolean>(false)
@@ -21,11 +22,16 @@ function Tweets() {
       )}>
         <TweetGrid tweets={tweetsIds} />
       </div>
-      <Button className='bg-transparent border-2 mt-2 border-primary text-primary cursor-pointer hover:text-black'
-        onClick={() => setShowMore(!showMore  )}
-      >
-        {showMore ? 'Show less' : 'Show More'}
-      </Button>
+     
+      <div className='flex flex-col gap-4 justify-center items-center'>
+        <Button className='bg-transparent border-2 w-fit mt-2 border-primary text-primary cursor-pointer hover:text-black'
+          onClick={() => setShowMore(!showMore  )}
+        >
+          {showMore ? 'Show less' : 'Show More'}
+        </Button>
+
+        <JoinCohortBtn className='w-fit' />
+      </div>
     </div>
     
   )
