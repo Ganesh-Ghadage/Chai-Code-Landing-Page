@@ -38,7 +38,7 @@ function AnimateText({text, className}: props) {
         <motion.span
           style={{
             opacity: 0,
-            filter: "blur(10px)",
+            filter: "blur(5px)",
             y: 10
           }}
           key={`text-word-${i}`}
