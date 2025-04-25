@@ -32,7 +32,7 @@ function FreeAPI() {
       <div ref={scope} className='relative w-full flex flex-col md:flex-row gap-4 justify-center items-center'>
         <motion.div 
           id='api-motion' 
-          className='w-full h-full flex items-center p-1 bg-foreground rounded-xl m-4'
+          className='w-full h-full flex items-center p-4'
           style={{
             opacity: 0,
             y: 20
