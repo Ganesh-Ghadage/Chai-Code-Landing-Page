@@ -23,6 +23,7 @@ function Udemy() {
               type: "spring"
             }
           }}
+          viewport={{ once: true }}
           className='w-full h-full flex items-center p-4'
         >
           <iframe 
@@ -48,6 +49,7 @@ function Udemy() {
               type: "spring"
             }
           }}
+          viewport={{ once: true }}
           className='relative w-full h-full'
         >
           <UdemyCard />
