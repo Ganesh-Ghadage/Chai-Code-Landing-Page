@@ -12,7 +12,7 @@ function BenifitsGrid() {
         return (
           <motion.div 
             key={`benifits-${i}`} 
-            className="border-2 border-border p-4 rounded-xl col-span-1" 
+            className="border-2 border-border p-4 rounded-xl col-span-1 hover:bg-primary/10" 
             initial={{
               opacity: 0,
               filter: 'blur(5px)',
@@ -42,7 +42,7 @@ function BenifitsGrid() {
         })
       }
       <motion.div 
-        className="border-2 border-border p-4 rounded-xl col-span-1 md:col-span-2 lg:col-span-3 inline-block"
+        className="border-2 border-border p-4 rounded-xl col-span-1 md:col-span-2 lg:col-span-3 inline-block hover:bg-primary/10"
         initial={{
           opacity: 0,
           filter: 'blur(5px)',

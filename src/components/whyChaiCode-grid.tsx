@@ -11,7 +11,7 @@ function ChaiCodeGrid() {
           <motion.div 
             key={`chaicode-${i}`} 
             className={cn(
-              "border-2 border-border p-4 rounded-xl",
+              "border-2 border-border p-4 rounded-xl hover:bg-primary/10",
               data.className
             )}
             initial={{
