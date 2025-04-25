@@ -25,6 +25,7 @@ function JoinCohortBtn({className}: props) {
       whileTap={{
         scale: [0.9, 1, 0.9]
       }}
+      viewport={{once: true}}
     >
       <a 
         href='https://courses.chaicode.com/learn/view-all?show=batch&type=17'
