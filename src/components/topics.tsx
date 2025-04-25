@@ -14,8 +14,8 @@ export function Topics() {
             initial={{
               opacity: 0,
               filter: 'blur(5px)',
-              y: (i % 2 === 0 ? -50 : 50),
-              x: (i % 2 === 0 ? 50 : -50)
+              y: (i % 2 === 0 ? -20 : 20),
+              x: (i % 2 === 0 ? 20 : -20)
             }}
             whileInView={{
               opacity: 1,

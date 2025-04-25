@@ -75,7 +75,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
       {cards.map((card, index) => (
         <motion.div
           style={{
-            scale: 0,
+            scale: 0.8,
             opacity: 0,
             y: 10
           }}

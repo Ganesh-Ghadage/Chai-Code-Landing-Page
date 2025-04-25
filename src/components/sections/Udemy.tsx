@@ -12,7 +12,7 @@ function Udemy() {
       <div className='relative w-full flex flex-col md:flex-row gap-4 justify-center items-center'>
         <motion.div 
           initial={{
-            x: -400,
+            x: -20,
             opacity: 0
           }}
           whileInView={{
@@ -38,7 +38,7 @@ function Udemy() {
         </motion.div>
         <motion.div 
           initial={{
-            x: 400,
+            x: 20,
             opacity: 0
           }}
           whileInView={{
