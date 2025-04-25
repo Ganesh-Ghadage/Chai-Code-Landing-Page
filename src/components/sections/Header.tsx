@@ -3,10 +3,10 @@ import { MyGraduationCap, MyScrollText, MyMessageCircleHeart } from "../icons/Lu
 import Udemy from "../icons/Udemy"
 import { NavBar } from "../ui/tubelight-navbar"
 import { useMobileView } from '@/hooks/useMobileView'
-
 import SideBarMenu from '../ui/sidebar-menu'
 import LogInButton from '../logIn-button'
 import ChaicodeLogo from '../chaicode-logo'
+import { motion } from 'motion/react'
 
 function Header() {
   const isMobile = useMobileView()
@@ -19,7 +19,21 @@ function Header() {
   ]
 
   return (
-    <div className='fixed top-0 left-1/2 -translate-x-1/2 z-50 min-w-full bg-foreground'>
+    <motion.div 
+      className='fixed top-0 left-1/2 -translate-x-1/2 z-50 min-w-full bg-foreground'
+      initial={{
+        y: -20,
+        opacity: 0
+      }}
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      transition={{
+        duration: 0.3,
+        ease: "easeInOut"
+      }}
+    >
       <div className='relative flex p-4 justify-between items-center'>
         {
           isMobile ? 
@@ -39,7 +53,7 @@ function Header() {
           </div>
         }
       </div>
-    </div>
+    </motion.div>
   )
 }
 
