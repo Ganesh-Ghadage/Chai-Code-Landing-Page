@@ -109,7 +109,7 @@ function Hero() {
         </motion.h1>   
       </div>
       
-      <motion.p 
+      <motion.div 
         className='w-[60%] text-md md:text-lg my-2'
         id='hero-motion'
         style={{
@@ -119,7 +119,7 @@ function Hero() {
         }}
       >
         <AnimateText text={`Content is every where, we provide a learning experience that is unmatched. Bounties, peer learning peer code reviews, Virtual hostel, Alumni Network, Doubt sessions, Group projects and so many other activities to keep you on track.`} />
-      </motion.p>
+      </motion.div>
 
       <div className='flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 my-4'>
         <motion.div 

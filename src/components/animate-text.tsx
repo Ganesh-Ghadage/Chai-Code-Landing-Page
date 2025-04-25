@@ -30,7 +30,7 @@ function AnimateText({text, className}: props) {
   }, [isInView])
 
   return (
-    <div 
+    <p 
       ref={scope}
       className={cn(className)}
     >
@@ -47,7 +47,7 @@ function AnimateText({text, className}: props) {
           {word} &nbsp;
         </motion.span>
       ))}
-    </div>
+    </p>
   )
 }
 
