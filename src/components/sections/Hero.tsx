@@ -30,7 +30,7 @@ function Hero() {
   }, [isInView])
 
   return (
-    <div ref={scope} className='w-full h-fit mb-10 flex flex-col items-center text-secondary'>
+    <div ref={scope} className=' relative w-full h-fit mb-10 flex flex-col items-center text-secondary'>
       <motion.div 
         id='hero-motion'
         style={{
@@ -226,7 +226,7 @@ function Hero() {
       </motion.button>
 
       <motion.div 
-        className=' w-full flex items-center justify-center'
+        className='h-[90dvh] w-full flex items-center justify-center'
         id='hero-motion'
         style={{
           opacity: 0,
@@ -257,7 +257,7 @@ function Hero() {
           opacity: 0.2,
           scale: 1
         }}
-        className='absolute w-[400px] aspect-square rounded-full -bottom-20 right-40 -z-30 blur-3xl bg-gradient-to-l from-amber-400 via-amber-500 to-primary opacity-10'
+        className='absolute w-[400px] aspect-square rounded-full top-80 right-5 -z-30 blur-3xl bg-gradient-to-l from-amber-400 via-amber-500 to-primary opacity-10'
       ></motion.div>
     </div>
   )
